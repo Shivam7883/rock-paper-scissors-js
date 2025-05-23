@@ -1,8 +1,13 @@
-console.log("I have not made it case sensitive so please type either `rock`, `paper` or `scissors`");
 let humanchoice=0
 let computerchoic=0
 for (let i = 0; i < 5; i++) {
     game = prompt('Please enter rock, paper or scissors');
+     if (game !== "rock" && game !== "paper" && game !== "scissors") {
+        console.log("Invalid input. Please enter 'rock', 'paper', or 'scissors'.");
+        i--; 
+        continue;
+    }
+
     getInput(game)
 }
 
