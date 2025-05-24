@@ -50,6 +50,7 @@ function getComputerChoice(){
 }
 
 function result(){
+    console.log("your final score:",humanchoice, "computer final score:",computerchoic)
     if(humanchoice>computerchoic){
         console.log("Congrats, you won the game")
     }else if (computerchoic>humanchoice){
